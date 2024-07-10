@@ -1,5 +1,8 @@
-{{page-title "FootballNew"}}
-
-<h2 id="title">Welcome to Ember</h2>
-
-{{outlet}}
+<div class="mb-4"> <!-- Add margin-top to create space -->
+  <NavBar /> <!-- Assuming this renders your NavBar component -->
+</div>
+<div class="mx-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+  {{#each this.model as |player|}}
+    <PlayerCard @player={{player}} />
+  {{/each}}
+</div>
