@@ -7,8 +7,8 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function () {
-  this.route('player', { path: '/players/:player_id' });
-  //this.route('appearances', { path: '/player/:player_id/appearances' });
+  this.route('player', { path: '/player/:player_id' });
+  this.route('appearances', { path: '/player/:player_id/appearances' });
   this.route('team');
   this.route('not-found', { path: '/*' });
 });
