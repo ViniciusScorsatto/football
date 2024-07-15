@@ -32,7 +32,8 @@ function routes() {
           attributes: {
             fullName: 'Lionel Messi',
             club: 'Inter Miami',
-            clubLogoUrl: 'https://1000logos.net/wp-content/uploads/2020/09/Inter-Miami-logo.png',
+            clubLogoUrl:
+              'https://1000logos.net/wp-content/uploads/2020/09/Inter-Miami-logo.png',
             position: 'Forward',
             marketValue: '€50M',
             photoUrl:
@@ -45,7 +46,8 @@ function routes() {
           attributes: {
             fullName: 'Cristiano Ronaldo',
             club: 'Al-Nassr',
-            clubLogoUrl: 'https://static.vecteezy.com/system/resources/previews/026/284/889/original/al-nassr-club-logo-symbol-saudi-arabia-football-abstract-design-illustration-free-vector.jpg',
+            clubLogoUrl:
+              'https://static.vecteezy.com/system/resources/previews/026/284/889/original/al-nassr-club-logo-symbol-saudi-arabia-football-abstract-design-illustration-free-vector.jpg',
             position: 'Forward',
             marketValue: '€45M',
             photoUrl:
@@ -58,7 +60,8 @@ function routes() {
           attributes: {
             fullName: 'Kevin De Bruyne',
             club: 'Manchester City',
-            clubLogoUrl: 'https://download.logo.wine/logo/Manchester_City_F.C./Manchester_City_F.C.-Logo.wine.png',
+            clubLogoUrl:
+              'https://download.logo.wine/logo/Manchester_City_F.C./Manchester_City_F.C.-Logo.wine.png',
             position: 'Midfielder',
             marketValue: '€70M',
             photoUrl:
@@ -70,7 +73,8 @@ function routes() {
           type: 'player',
           attributes: {
             fullName: 'Virgil van Dijk',
-            clubLogoUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA6__WSXS7lEdXM3M5hE-h27JqPw_F9qQcsg&s',
+            clubLogoUrl:
+              'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA6__WSXS7lEdXM3M5hE-h27JqPw_F9qQcsg&s',
             club: 'Liverpool',
             position: 'Defender',
             marketValue: '€60M',
@@ -90,7 +94,8 @@ function routes() {
         type: 'player',
         attributes: {
           fullName: 'Lionel Messi',
-          clubLogoUrl: 'https://1000logos.net/wp-content/uploads/2020/09/Inter-Miami-logo.png',
+          clubLogoUrl:
+            'https://1000logos.net/wp-content/uploads/2020/09/Inter-Miami-logo.png',
           club: 'Inter Miami',
           position: 'Forward',
           marketValue: '€50M',
@@ -104,13 +109,55 @@ function routes() {
   this.get('/players/:id/appearances', (schema, request) => {
     return {
       dates: [
-        { id: 1, date: '2021-01-01', opponent: 'Team A', ownTeamGoals: 3, opponentGoals: 1, isHomeMatch: true },
-        { id: 2, date: '2021-02-01', opponent: 'Team B', ownTeamGoals: 2, opponentGoals: 2, isHomeMatch: false },
-        { id: 3, date: '2021-03-01', opponent: 'Team A', ownTeamGoals: 3, opponentGoals: 1, isHomeMatch: true },
-        { id: 4, date: '2021-04-01', opponent: 'Team B', ownTeamGoals: 2, opponentGoalxs: 2, isHomeMatch: false },
-        { id: 5, date: '2021-05-01', opponent: 'Team A', ownTeamGoals: 3, opponentGoals: 1, isHomeMatch: true },
-        { id: 6, date: '2021-06-01', opponent: 'Team B', ownTeamGoals: 2, opponentGoals: 2, isHomeMatch: false }
-      ]
+        {
+          id: 1,
+          date: '2021-01-01',
+          opponent: 'Team A',
+          ownTeamGoals: 3,
+          opponentGoals: 1,
+          isHomeMatch: true,
+        },
+        {
+          id: 2,
+          date: '2021-02-01',
+          opponent: 'Team B',
+          ownTeamGoals: 2,
+          opponentGoals: 2,
+          isHomeMatch: false,
+        },
+        {
+          id: 3,
+          date: '2021-03-01',
+          opponent: 'Team A',
+          ownTeamGoals: 3,
+          opponentGoals: 1,
+          isHomeMatch: true,
+        },
+        {
+          id: 4,
+          date: '2021-04-01',
+          opponent: 'Team B',
+          ownTeamGoals: 2,
+          opponentGoalxs: 2,
+          isHomeMatch: false,
+        },
+        {
+          id: 5,
+          date: '2021-05-01',
+          opponent: 'Team A',
+          ownTeamGoals: 3,
+          opponentGoals: 1,
+          isHomeMatch: true,
+        },
+        {
+          id: 6,
+          date: '2021-06-01',
+          opponent: 'Team B',
+          ownTeamGoals: 2,
+          opponentGoals: 2,
+          isHomeMatch: false,
+        },
+      ],
     };
   });
 
