@@ -1,0 +1,28 @@
+  {{!-- Appearances Table --}}
+  <div class="bg-white shadow rounded-lg p-4 mb-4 lg:w-2/3">
+    <h2 class="text-xl font-semibold mb-2">Appearances</h2>
+    <table class="min-w-full divide-y divide-gray-200">
+      <thead class="bg-gray-50">
+        <tr>
+          <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date</th>
+          <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Opponent</th>
+          <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Result</th>
+        </tr>
+      </thead>
+      <tbody class="bg-white divide-y divide-gray-200">
+        {{#each @model.appearances.dates as |appearance|}}
+          <tr>
+            <td class="px-6 py-4 whitespace-nowrap">{{appearance.date}}</td>
+            <td class="px-6 py-4 whitespace-nowrap">{{appearance.opponent}}</td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              {{#if appearance.isHomeMatch}}
+                Home: {{appearance.ownTeamGoals}} - {{appearance.opponentGoals}}
+              {{else}}
+                Away: {{appearance.ownTeamGoals}} - {{appearance.opponentGoals}}
+              {{/if}}
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>

@@ -98,7 +98,7 @@ function routes() {
             'https://1000logos.net/wp-content/uploads/2020/09/Inter-Miami-logo.png',
           club: 'Inter Miami',
           position: 'Forward',
-          marketValue: '€50M',
+          marketValue: '€60M',
           photoUrl:
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjQeXEHnK4BoXoRcF-AmZz7Rn2UuBYvmq70A&s',
         },

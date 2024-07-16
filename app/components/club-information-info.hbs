@@ -1,0 +1,11 @@
+{{!-- Club Information --}}
+    <div class="flex items-center mb-2">
+      {{!-- Club Logo (Replace with actual logo or image URL) --}}
+      <img src="{{@model.player.clubLogoUrl}}" alt="{{@model.player.club}}" class="h-16 w-16 object-contain rounded mr-2">
+
+      {{!-- Club Name --}}
+      <div>
+        <p class="text-sm font-medium text-gray-700">{{@model.player.club}}</p>
+        <p class="text-xs text-gray-500">Market Value: {{@model.player.marketValue}}</p>
+      </div>
+    </div>

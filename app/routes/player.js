@@ -5,8 +5,7 @@ import { inject as service } from '@ember/service';
 export default class PlayerRoute extends Route {
   @service store;
 
-  model(params) {
-    console.log(params);
+  async model(params) {
     return hash({
       player: this.store.findRecord('player', params.player_id),
       appearances: fetch(`/api/players/${params.player_id}/appearances`).then(
